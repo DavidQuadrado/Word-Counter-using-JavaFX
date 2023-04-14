@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="486.0" prefWidth="458.0" spacing="20.0" style="-fx-background-color: whitesmoke;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ficha3.HelloController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+   <children>
+      <VBox prefHeight="473.0" prefWidth="477.0" style="-fx-background-color: lightyellow;">
+         <children>
+            <HBox prefHeight="403.0" prefWidth="449.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <TextArea fx:id="text" prefHeight="402.0" prefWidth="456.0" styleClass="text-area" stylesheets="@../../../uso.css" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <VBox prefHeight="74.0" prefWidth="449.0" style="-fx-background-color: pink;">
+               <children>
+                  <HBox prefHeight="93.0" prefWidth="446.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Palavra:" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets left="2.0" top="25.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="wordToSearch" style="-fx-background-color: black; -fx-text-fill: yellow;" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="3.0" top="22.0" />
+                                 </HBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <Label fx:id="counter" minHeight="25.0" minWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: black; -fx-text-fill: yellow;" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="23.0" top="22.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="button" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Contar" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="20.0" top="22.0" />
+                           </HBox.margin>
+                        </Button>
+                        <CheckBox fx:id="isCapital" mnemonicParsing="false" text="Maiúsculas" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="20.0" top="26.0" />
+                           </HBox.margin>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
